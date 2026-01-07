@@ -45,8 +45,8 @@ a {
 }
 
 // Optional: Ensure code blocks still use monospace
-pre, code {
-  font-family: 'JetBrains Mono', monospace !important;
+pre, code, pre *, code * {
+  font-family: 'JetBrains Mono Nerd Font', monospace !important;
 }
 
 // Add white background to all SVG elements
