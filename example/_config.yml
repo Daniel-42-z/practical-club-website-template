@@ -1,0 +1,19 @@
+title: Practical Club Template Example
+email: example@example.com
+description: >-
+  An example site showcasing the features of the Practical Club Website Template.
+baseurl: "/practical-club-website-template"
+url: "https://daniel-42-z.github.io"
+
+theme: practical-club-website-template
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  skin: auto
+  social_links:
+    - title: GitHub
+      icon: github
+      url: https://github.com/Daniel-42-z/practical-club-website-template

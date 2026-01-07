@@ -1,0 +1,50 @@
+name: Build and Deploy Example Site
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'example/**'
+      - 'lib/**'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_sass/**'
+      - 'assets/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Using a newer ruby version
+          bundler-cache: true
+          working-directory: example
+
+      - name: Install dependencies
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+        working-directory: example
+
+      - name: Build site
+        run: bundle exec jekyll build
+        working-directory: example
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./example/_site
+          force_orphan: true
