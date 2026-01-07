@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect: /features/markdown/
+redirect: /practical-club-website-template/features/markdown/
 ---
 
 # Redirecting...
