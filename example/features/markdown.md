@@ -70,3 +70,29 @@ console.log('Hello, world!');
 [Link to Google](https://google.com)
 
 ![Placeholder Image](https://via.placeholder.com/150 "Placeholder Image")
+
+## Math Equations
+
+You can use TeX equations for mathematical formulas.
+
+### Inline Math
+
+This is an inline equation: $E = mc^2$.
+
+### Display Math
+
+This is a display equation:
+
+$$
+\int_{a}^{b} f(x) \, dx = F(b) - F(a)
+$$
+
+Another example with a matrix:
+
+$$
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
