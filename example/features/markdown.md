@@ -69,7 +69,7 @@ console.log('Hello, world!');
 
 [Link to Google](https://google.com)
 
-![Placeholder Image](https://via.placeholder.com/150 "Placeholder Image")
+![](https://archlinux.org/static/logos/archlinux-logo-light-1200dpi.png){: width="50%"}
 
 ## Math Equations
 
