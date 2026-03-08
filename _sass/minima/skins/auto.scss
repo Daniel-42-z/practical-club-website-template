@@ -270,6 +270,7 @@ $table-border-color: $lm-table-border-color;
   // Auto mode
 
   :root {
+    color-scheme: light dark;
     --minima-brand-color: #{$lm-brand-color};
     --minima-brand-color-light: #{$lm-brand-color-light};
     --minima-brand-color-dimmed: #{$lm-brand-color-dimmed};
@@ -362,6 +363,10 @@ $table-border-color: $lm-table-border-color;
 
   // Dark skin (always dark mode)
 
+  :root {
+    color-scheme: dark;
+  }
+
   $brand-color: $dm-brand-color;
   $brand-color-light: $dm-brand-color-light;
   $brand-color-dimmed: $dm-brand-color-dimmed;
@@ -394,6 +399,10 @@ $table-border-color: $lm-table-border-color;
 } @else {
 
   // Classic skin syntax highlighting
+  :root {
+    color-scheme: light;
+  }
+
   @include lm-highlight;
 
 }
