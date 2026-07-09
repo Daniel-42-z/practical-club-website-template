@@ -33,7 +33,15 @@ jekyll serve
 
 ## 2. Usage (for other websites)
 
-Add this line to your Jekyll site's `Gemfile`:
+### Option A: Create a New Website
+If you are starting a brand-new website from scratch, the easiest way is to use the `example` folder as your base:
+1. Copy the `example` folder from this repository to your computer.
+2. Initialize a new git repository inside that folder (e.g., `git init`).
+3. Push it to a new GitHub repository. 
+*(GitHub Actions and `.gitignore` are already configured, so it will automatically build and deploy to GitHub Pages!)*
+
+### Option B: Add to an Existing Website
+If you already have a Jekyll site, add this line to your `Gemfile`:
 
 ```ruby
 gem "practical-club-website-template", git: "https://github.com/Daniel-42-z/practical-club-website-template.git"
