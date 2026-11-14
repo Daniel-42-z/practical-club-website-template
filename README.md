@@ -57,7 +57,8 @@ theme: practical-club-website-template
 
 ## 3. Housekeeping Rules
 
-- `_site/`, `.gem/`, `.bundle/`, `Gemfile.lock`, caches, etc. are already in `.gitignore`; **do not commit them**.
+- Commit `example/Gemfile.lock` so local previews and GitHub Pages use the same gem versions.
+- Keep generated files such as `_site/`, `.gem/`, `.bundle/`, and the root lockfile ignored.
 - Keep line length ≤ 100 chars so diffs stay readable.
 
 Happy writing!
